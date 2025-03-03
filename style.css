@@ -1,0 +1,1182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto Mono";
+}
+
+header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3.5rem;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: small;
+}
+header nav .nav-links {
+  display: none;
+}
+header nav button {
+  display: none;
+}
+header nav .ham {
+  width: 2.2rem;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 0rem;
+  justify-content: space-between;
+}
+header nav .ham hr {
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 0.25rem;
+  background: #000;
+}
+
+.options {
+  width: 80%;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 1rem;
+  display: none;
+}
+.options .opt {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 1rem;
+}
+.options .opt a {
+  color: white;
+  font-size: small;
+}
+.options button {
+  width: 100%;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+}
+
+main {
+  width: 100%;
+  padding: 0rem 1.5rem;
+  font-family: "Roboto Mono";
+}
+main .view-one .image {
+  width: 100%;
+  overflow: hidden;
+}
+main .view-one .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: moveup 0.8s ease-in-out;
+}
+main .view-one .agency-berlin {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  margin-top: 0.7rem;
+}
+main .view-two {
+  padding: 3rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-two .hero {
+  width: 100%;
+}
+main .view-two .hero img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-two .head-para-services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+main .view-two .head-para-services .head-para {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-two .head-para-services .head-para h1 {
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  font-weight: 360;
+  line-height: 0.95;
+  font-family: "General Sans";
+}
+main .view-two .head-para-services .head-para p {
+  font-size: large;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+main .view-two .head-para-services .services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 0.8rem;
+}
+main .view-two .head-para-services .services .temp {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: "General Sans";
+  font-size: 1.7rem;
+}
+main .view-two .head-para-services .services hr {
+  opacity: 0.5;
+}
+main .view-three {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .view-three .img2 {
+  width: 100%;
+}
+main .view-three .img2 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-three .p-h1-para {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+main .view-three .p-h1-para .y-direction {
+  writing-mode: vertical-lr;
+  font-size: small;
+}
+main .view-three .p-h1-para .head-para {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 1rem;
+}
+main .view-three .p-h1-para .head-para h1 {
+  font-family: "General Sans";
+  font-weight: 380;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+main .view-three .p-h1-para .head-para p {
+  font-size: 1.1rem;
+  opacity: 0.5;
+  line-height: 1.5;
+}
+main .view-four {
+  width: 100%;
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-four .our-services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-four .our-services .h-ani h1 {
+  font-family: "General Sans";
+  font-weight: 360;
+  line-height: 1;
+  font-size: clamp(2.8rem, 6vw, 8rem) !important;
+}
+main .view-four .our-services .services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+main .view-four .our-services .services .tmp-serve {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 0.6rem;
+}
+main .view-four .our-services .services .tmp-serve hr {
+  opacity: 0.5;
+}
+main .view-four .our-services .services .tmp-serve h2 {
+  font-family: "General Sans";
+  font-weight: 360;
+  text-transform: uppercase;
+}
+main .view-four .our-services .services .tmp-serve p {
+  opacity: 0.5;
+}
+main .view-four .our-services .services .tmp-serve a {
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .view-four .our-services .services .tmp-serve a div {
+  border-radius: 100%;
+  background: #000;
+  height: 2.4rem;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+main .view-four .our-services .services .tmp-serve a div img {
+  display: block;
+  padding: 0.5rem 0.6rem;
+  filter: invert(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateY(0%);
+  transition: all ease-out 0.4s;
+}
+main .view-four .our-services .services .tmp-serve a:hover div img {
+  transform: translateY(-100%);
+}
+main .view-four .our-services .services .tmp-serve a h2 {
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+  font-size: small;
+  font-weight: 360;
+  opacity: 0.8;
+}
+main .view-four .img3 {
+  width: 100%;
+}
+main .view-four .img3 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-five {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 2rem;
+}
+main .view-five .sele-img {
+  width: 100%;
+}
+main .view-five .sele-img img {
+  width: 100%;
+}
+main .view-five .img-cont {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 2rem;
+}
+main .view-five .img-cont .img2 {
+  display: none;
+}
+main .view-five .img-cont .img3 {
+  display: none;
+}
+main .view-five .img-cont .temp2 {
+  order: 4;
+}
+main .view-five .img-cont .img-div {
+  width: 100%;
+}
+main .view-five .img-cont .img-div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-five .img-cont .tmp-serve {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 0.3rem;
+  justify-content: space-between;
+  padding: 2rem;
+}
+main .view-five .img-cont .tmp-serve div h2 {
+  font-family: "General Sans";
+  font-weight: 380;
+  font-size: 2.5rem;
+}
+main .view-five .img-cont .tmp-serve div p {
+  opacity: 0.8;
+}
+main .view-five .img-cont .tmp-serve a {
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .view-five .img-cont .tmp-serve a div {
+  border-radius: 100%;
+  background: #000;
+  height: 2.4rem;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+main .view-five .img-cont .tmp-serve a div img {
+  display: block;
+  padding: 0.5rem 0.6rem;
+  filter: invert(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateY(0%);
+  transition: all ease-out 0.4s;
+}
+main .view-five .img-cont .tmp-serve a:hover div img {
+  transform: translateY(-100%);
+}
+main .view-five .img-cont .tmp-serve a h2 {
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+  font-size: small;
+  font-weight: 360;
+  opacity: 0.8;
+}
+main .view-six {
+  width: 100%;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-six .img-client img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-six .cli {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-six .cli .client-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 0.7rem;
+}
+main .view-six .cli .client-cont .year-name {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 0.7rem;
+}
+main .view-six .cli .client-cont .year-name p {
+  font-size: small;
+}
+main .view-six .cli .client-cont .year-name h1 {
+  font-size: 1.7rem;
+  font-family: "General Sans";
+  font-weight: 380;
+  text-transform: uppercase;
+}
+main .view-six .cli .client-cont .branding {
+  font-size: small;
+}
+main .view-six .cli hr {
+  opacity: 0.5;
+}
+main .view-seven {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 0rem;
+  gap: 3rem;
+}
+main .view-seven hr {
+  opacity: 0.5;
+}
+main .view-seven .head-para {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 0.5rem;
+}
+main .view-seven .head-para h1 {
+  font-family: "General Sans";
+  font-weight: 380;
+  font-size: 3rem;
+}
+main .view-seven .head-para P {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+main .view-seven .team {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 2rem;
+}
+main .view-seven .team .team-member {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-seven .team .team-member .name-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-seven .team .team-member .name-img h2 {
+  font-family: "General Sans";
+  text-transform: uppercase;
+  font-weight: 360;
+}
+main .view-seven .team .team-member .name-img .pofile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 0.5rem;
+}
+main .view-seven .team .team-member .name-img .pofile .img {
+  width: 100%;
+}
+main .view-seven .team .team-member .name-img .pofile .img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-seven .team .team-member .name-img .pofile .prof-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+main .view-seven .team .team-member .name-img .pofile .prof-link h3 {
+  font-size: small;
+  font-weight: 380;
+  text-transform: uppercase;
+}
+main .view-seven .team .team-member .name-img .pofile .prof-link .links {
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+main .view-seven .team .team-member .name-img .pofile .prof-link .links link {
+  width: 100%;
+}
+main .view-seven .team .team-member .name-img .pofile .prof-link .links link img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-seven .team .team-member P {
+  opacity: 0.6;
+}
+main .view-eight {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 1rem;
+}
+main .view-eight .join-future {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 1rem;
+}
+main .view-eight .join-future hr {
+  opacity: 0.5;
+}
+main .view-eight .join-future p {
+  text-transform: uppercase;
+  font-size: small;
+}
+main .view-eight .join-future h1 {
+  font-family: "General Sans";
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 360;
+  line-height: 1.1;
+}
+main .view-eight a {
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .view-eight a div {
+  border-radius: 100%;
+  background: #000;
+  height: 2.4rem;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+main .view-eight a div img {
+  display: block;
+  padding: 0.5rem 0.6rem;
+  filter: invert(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateY(0%);
+  transition: all ease-out 0.4s;
+}
+main .view-eight a:hover div img {
+  transform: translateY(-100%);
+}
+main .view-eight a h2 {
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+  font-size: small;
+  font-weight: 360;
+  opacity: 0.8;
+}
+
+footer {
+  width: 100%;
+  background: #111111;
+  font-family: "Roboto Mono";
+}
+footer .foot-one {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+footer .foot-one .letscreate {
+  width: 100%;
+}
+footer .foot-one .letscreate img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .foot-one h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "General Sans";
+  font-weight: 360;
+  font-size: 2.2rem;
+  line-height: 1.1;
+}
+footer .foot-one a {
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .foot-one a div {
+  border-radius: 100%;
+  background: #000;
+  height: 2.4rem;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+footer .foot-one a div img {
+  display: block;
+  padding: 0.5rem 0.6rem;
+  filter: invert(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateY(0%);
+  transition: all ease-out 0.4s;
+}
+footer .foot-one a:hover div img {
+  transform: translateY(-100%);
+}
+footer .foot-one a h2 {
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+  font-size: small;
+  font-weight: 360;
+  opacity: 0.8;
+}
+footer .foot-one a {
+  padding: 0rem 1rem;
+  border-radius: 10rem;
+  flex-direction: row-reverse;
+  background: white;
+  gap: 0rem;
+}
+footer .foot-one a div {
+  background: white;
+}
+footer .foot-one a div img {
+  filter: invert(0);
+  padding: 0.4rem 0.5rem;
+}
+footer .foot-one a h2 {
+  color: #000;
+  height: 16.667px;
+  overflow: hidden;
+}
+footer .foot-one a h2 span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0;
+  transform: translateY(0%);
+  transition: all ease-out 0.2s;
+}
+footer .foot-one a:hover h2 span {
+  transform: translateY(-100%);
+}
+footer hr {
+  opacity: 0.1;
+}
+footer .foot-two {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 2rem;
+}
+footer .foot-two .link-pg-cms-utpg {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 2.5rem;
+}
+footer .foot-two .link-pg-cms-utpg .logo-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+}
+footer .foot-two .link-pg-cms-utpg .logo-links .logo {
+  width: 4rem;
+}
+footer .foot-two .link-pg-cms-utpg .logo-links .logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .foot-two .link-pg-cms-utpg .logo-links .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 1rem;
+}
+footer .foot-two .link-pg-cms-utpg .logo-links .links a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+footer .foot-two .link-pg-cms-utpg .logo-links .links a .logo {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.4rem;
+  background: white;
+  border-radius: 100%;
+}
+footer .foot-two .link-pg-cms-utpg .logo-links .links a .logo img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .foot-two .link-pg-cms-utpg .logo-links .links a p {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: small;
+}
+footer .foot-two .link-pg-cms-utpg .pages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  gap: 1.5rem;
+}
+footer .foot-two .link-pg-cms-utpg .pages h1 {
+  font-family: "General Sans";
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+footer .foot-two .link-pg-cms-utpg .pages a {
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .foot-two .link-pg-cms-utpg .pages a div {
+  border-radius: 100%;
+  background: #000;
+  height: 2.4rem;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+footer .foot-two .link-pg-cms-utpg .pages a div img {
+  display: block;
+  padding: 0.5rem 0.6rem;
+  filter: invert(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateY(0%);
+  transition: all ease-out 0.4s;
+}
+footer .foot-two .link-pg-cms-utpg .pages a:hover div img {
+  transform: translateY(-100%);
+}
+footer .foot-two .link-pg-cms-utpg .pages a h2 {
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+  font-size: small;
+  font-weight: 360;
+  opacity: 0.8;
+}
+footer .foot-two .link-pg-cms-utpg .pages .btn {
+  padding: 0rem 1rem;
+  border-radius: 10rem;
+  flex-direction: row-reverse;
+  background: white;
+  gap: 0rem;
+}
+footer .foot-two .link-pg-cms-utpg .pages .btn div {
+  background: white;
+}
+footer .foot-two .link-pg-cms-utpg .pages .btn div img {
+  filter: invert(0);
+  padding: 0.4rem 0.5rem;
+}
+footer .foot-two .link-pg-cms-utpg .pages .btn h2 {
+  color: #000;
+  height: 16.667px;
+  overflow: hidden;
+}
+footer .foot-two .link-pg-cms-utpg .pages .btn h2 span {
+  display: block;
+  transform: translateY(0%);
+  transition: all ease-out 0.2s;
+}
+footer .foot-two .link-pg-cms-utpg .pages .btn:hover h2 span {
+  transform: translateY(-100%);
+}
+footer .foot-two .link-pg-cms-utpg .pages .pg-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .foot-two .link-pg-cms-utpg .pages .pg-links a {
+  padding: 0;
+  color: #888888;
+  font-size: small;
+  font-weight: 360;
+}
+footer .foot-two .foot {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+footer .foot-two .foot .cpy {
+  color: #888888;
+  font-size: small;
+}
+footer .foot-two .foot .cpy a {
+  color: #888888;
+  text-decoration: underline;
+}
+footer .foot-two .foot .top a {
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .foot-two .foot .top a div {
+  border-radius: 100%;
+  background: #000;
+  height: 2.4rem;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+footer .foot-two .foot .top a div img {
+  display: block;
+  padding: 0.5rem 0.6rem;
+  filter: invert(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateY(0%);
+  transition: all ease-out 0.4s;
+}
+footer .foot-two .foot .top a:hover div img {
+  transform: translateY(-100%);
+}
+footer .foot-two .foot .top a h2 {
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+  font-size: small;
+  font-weight: 360;
+  opacity: 0.8;
+}
+footer .foot-two .foot .top a {
+  flex-direction: row-reverse;
+  padding: 0;
+}
+footer .foot-two .foot .top a div {
+  transform: rotate(0);
+  background: white;
+}
+footer .foot-two .foot .top a div img {
+  filter: invert(0);
+  transition: all 0.3s ease-in;
+}
+footer .foot-two .foot .top a h2 {
+  color: #888888;
+}
+footer .foot-two .foot .top a:hover div img {
+  transform: translateY(-100%);
+}
+
+@media (min-width: 475px) {
+  header nav .nav-links {
+    display: none;
+  }
+  header nav .nav-links a {
+    height: 1rem !important;
+    overflow: hidden;
+  }
+  header nav .nav-links a p {
+    transition: all ease-in-out 0.2s;
+  }
+  header nav .nav-links a:hover p {
+    transform: translateY(-100%);
+  }
+  header nav button {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 2.3rem;
+    overflow: hidden;
+    background: #000;
+    border: 1px solid black;
+    border-radius: 10rem;
+  }
+  header nav button a {
+    padding: 0.6rem 1rem;
+    color: white;
+    transition: all ease-in-out 0.2s;
+  }
+  header nav button:hover a {
+    transform: translateY(-100%);
+  }
+  .view-five {
+    width: 100%;
+  }
+  .view-five .img-cont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .view-five .img-cont .img4 {
+    order: 4;
+  }
+  .view-five .img-cont .temp2 {
+    order: 3;
+  }
+  .view-six .cli .client-cont {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .view-six .cli .client-cont .year-name {
+    gap: 2rem !important;
+    align-items: center;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+  .view-six .cli .client-cont .year-name h1 {
+    font-size: 1.8rem !important;
+  }
+  .view-seven .team {
+    grid-template-columns: auto auto !important;
+  }
+  footer .foot-one {
+    padding: 5rem 2.5rem;
+  }
+  footer .foot-two {
+    padding: 5rem 3rem;
+    padding-bottom: 2.5rem;
+  }
+  footer .foot-two .link-pg-cms-utpg {
+    grid-template-columns: auto auto;
+    gap: 5rem;
+    grid-template-rows: auto auto;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    padding: 1.5rem 2.8rem;
+  }
+  main .view-two .head-para-services .head-para h1 {
+    font-size: clamp(4rem, 6vw, 8rem) !important;
+  }
+  main .view-two .head-para-services .head-para p {
+    font-size: 1.3rem !important;
+  }
+  main .view-two .head-para-services .services .temp {
+    font-size: 2rem;
+  }
+  main .view-three .p-h1-para .head-para h1 {
+    font-size: clamp(4.5rem, 6vw, 8rem) !important;
+  }
+  main .view-four .our-services h1 {
+    font-size: clamp(4.5rem, 6vw, 8rem) !important;
+  }
+  main .view-four .our-services .services {
+    grid-template-columns: auto auto;
+    gap: 3rem;
+  }
+  main .view-five .img-cont .tmp-serve {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    gap: 0.3rem;
+  }
+  main .view-five .img-cont .tmp-serve div h2 {
+    font-size: 3.5rem;
+  }
+  main .view-seven .head-para h1 {
+    font-size: 5rem;
+  }
+  main .view-eight .join-future h1 {
+    font-size: 3.5rem;
+  }
+  footer .foot-one {
+    padding: 5rem 3rem;
+    gap: 2rem;
+  }
+  footer .foot-one h1 {
+    font-size: 3.4rem;
+  }
+  footer .foot-two .foot {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1000px) {
+  header nav .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  header nav .ham {
+    display: none;
+  }
+  .options {
+    display: none;
+  }
+  main {
+    padding: 1.5rem 3.5rem;
+  }
+  main .view-two {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3.5rem;
+  }
+  main .view-two .hero {
+    width: 50%;
+  }
+  main .view-two .hero img {
+    height: 100%;
+  }
+  main .view-two .head-para-services {
+    width: 55%;
+    justify-content: space-between;
+  }
+  main .view-two .head-para-services .services {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    gap: 0.8rem;
+  }
+  main .view-three {
+    flex-direction: row;
+  }
+  main .view-three .img2 img {
+    height: 100%;
+  }
+  main .view-three .p-h1-para {
+    padding: 2rem 0rem;
+    flex-direction: row-reverse;
+  }
+  main .view-three .p-h1-para .y-direction {
+    writing-mode: vertical-lr;
+  }
+  main .view-three .p-h1-para .head-para {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    gap: 6rem;
+  }
+  main .view-three .p-h1-para .head-para h1 {
+    font-family: "General Sans";
+    font-weight: 380;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  main .view-three .p-h1-para .head-para p {
+    font-size: 1.1rem;
+    opacity: 0.5;
+    line-height: 1.5;
+  }
+  main .view-four {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .view-four .our-services {
+    width: 50%;
+  }
+  main .view-four .our-services h1 {
+    font-size: clamp(2.8rem, 6vw, 8rem) !important;
+    width: 85%;
+  }
+  main .view-four .our-services .services {
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+  main .view-four .our-services .services .tmp-serve {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    gap: 0.6rem;
+  }
+  main .view-four .our-services .services .tmp-serve h2 {
+    font-size: clamp(1.1rem, 1vw, 3rem);
+  }
+  main .view-four .img3 {
+    width: 40%;
+  }
+  main .view-four .img3 img {
+    height: 100%;
+    width: 100%;
+  }
+  main .view-five .img-cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .view-five .img-cont .img2 {
+    display: block;
+  }
+  main .view-five .img-cont .temp2 {
+    order: 4;
+  }
+  main .view-five .img-cont .img3 {
+    display: block;
+    order: 6;
+  }
+  main .view-five .img-cont .tmp-serve {
+    padding: 1rem;
+  }
+  main .view-six {
+    padding-left: 30%;
+    gap: 3rem;
+  }
+  main .view-six .img-client {
+    width: 40%;
+    text-align: end;
+    margin-left: auto;
+  }
+  main .view-seven {
+    gap: 4rem;
+  }
+  main .view-seven .head-para {
+    flex-direction: row;
+    gap: 16rem;
+  }
+  main .view-seven .head-para h1 {
+    font-size: 5.5rem;
+  }
+  main .view-seven .team {
+    grid-template-columns: auto auto auto auto !important;
+  }
+  main .view-seven .team .team-member .name-img h2 {
+    font-size: large;
+  }
+  main .view-eight {
+    padding-left: 50%;
+  }
+  main .view-eight .join-future h1 {
+    font-size: clamp(3rem, 5vw, 6rem);
+  }
+  footer .foot-one {
+    padding: 8rem 4rem;
+  }
+  footer .foot-one h1 {
+    font-size: clamp(2rem, 4.5vw, 8rem);
+  }
+  footer .foot-two {
+    gap: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  footer .foot-two .link-pg-cms-utpg {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+  }
+}
+@keyframes moveup {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
