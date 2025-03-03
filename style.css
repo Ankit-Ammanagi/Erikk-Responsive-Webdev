@@ -220,7 +220,6 @@ main .view-four .our-services .h-ani h1 {
 }
 main .view-four .our-services .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem;
 }
 main .view-four .our-services .services .tmp-serve {
